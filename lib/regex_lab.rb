@@ -4,7 +4,7 @@ def starts_with_a_vowel?(word)
 end
 
 def words_starting_with_un_and_ending_with_ing(text)
- word_array = text.scan(/\bun\w*?ing\b/)
+ word_array = text.scan(/\bun\w*ing\b/)
  return word_array
 end
 
@@ -18,5 +18,5 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 end
 
 def valid_phone_number?(phone)
-  return phone.scan(/\d{3}\D{0,2}\d{3}\D{0,2}\d{4}/).length > 0
+  return phone.scan(/\d{3}\D{0,1}\d{3}\D{0,1}\d{4}/).length > 0
 end
